@@ -16,20 +16,20 @@ workout_stats = {
     "Tanima": (17, 26, 30)
 }
 
-print(workout_stats)
+#print(workout_stats)
 
 # (d)
 for friend, minutes in list(workout_stats.items()):
     total_minutes = sum(minutes)
     workout_stats[f"{friend}_Total"] = total_minutes
 
-print(workout_stats)
+#print(workout_stats)
 
 # (e)
 workout_list = [list(minutes) for minutes in workout_stats.values() 
                 if isinstance(minutes, tuple)]
 
-print(workout_list)
+#print(workout_list)
 
 
 workout_list = [list(minutes) for minutes in workout_stats.values() if isinstance(minutes, tuple)]
